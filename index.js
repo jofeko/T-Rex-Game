@@ -127,15 +127,10 @@ function restart() {
   block.style.display = "block";
   document.getElementById("deleteScore").style.display = "none";
   document.querySelector("body").style.animation = "paused";
-
-  function playBgMusic() {
-    bgMusic.play();
-  }
 }
 
 
 function deleteScore() {
   localStorage.removeItem("highScore");
   document.getElementById("highScore").innerHTML = " 0";
-
 }
