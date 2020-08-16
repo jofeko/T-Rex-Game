@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4f9e1;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.5rem;
+  margin-top: 100px;
+}
+
+p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+audio {
+  display: none;
+}
+
+.trex{
+  color: #cc0000;
+}
+
+#game {
+  width: 800px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+
+#character {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 170px;
+  background-image: url("data/dino.png");
+  background-repeat: no-repeat;
+}
+
+.animate {
+  animation: jump 400ms linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 170px;
+  }
+
+  30% {
+    top: 90px;
+  }
+
+  70% {
+    top: 90px;
+  }
+
+  100% {
+    top: 170px;
+  }
+}
+
+#block {
+  width: 40px;
+  height: 40px;
+  background-color: #2487FE;
+  position: relative;
+  top: 130px;
+  left: 760px;
+}
+
+@keyframes block {
+  0% {
+    left: 760px;
+  }
+
+  100% {
+    left: -40px;
+    background-color: #465B74;
+  }
+}
+
+@keyframes block2 {
+  0% {
+    left: 760px;
+    background-color: #ff3d50;
+  }
+
+  100% {
+    left: -40px;
+    background-color: #eb68ed;
+  }
+}
+
+@keyframes block3 {
+  0% {
+    left: 760px;
+    background-color: #ffa500;
+  }
+
+  100% {
+    left: -40px;
+    background-color: #ffff00;
+  }
+}
+
+@keyframes ultimate {
+  0% {
+    background-color: #78F268;
+  }
+
+  100% {
+    background-color: #1C7D0F;
+  }
+}
+
+.button-class {
+  padding: 3rem;
+}
+
+button {
+  width: 70px;
+  height: 50px;
+}

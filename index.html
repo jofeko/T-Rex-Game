@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dino Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="data/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio controls id="music">
+    <source src="data/bensound-popdance.mp3">
+    <!--Royalty Free Music from Bensound-->
+  </audio>
+
+  <h1><span class="trex">T-Rex</span> Runner</h1>
+  <div class="score-board">
+    <p>Highscore:<span id="highScore"> 0</p>
+    <p>Score:<span id="score"> 0</p>
+  </div>
+  <div id="game">
+    <div id="character">
+    </div>
+    <div id="block">
+    </div>
+  </div>
+  <div class="button-class">
+    <button id="restart" onclick="restart()">Start</button>
+    <button id="deleteScore" onclick="deleteScore()">Reset</button>
+  </div>
+
+  <p>
+    <script src="index.js"></script>
+  </p>
+
+</body>
+
+</html>
